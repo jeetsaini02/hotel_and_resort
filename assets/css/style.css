@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    background-color: white;
+    height: 70px;
+ 
+}
+.navbar-brand {
+    margin-left: 50px;
+}
+.nav-item{
+    font-weight: 500;
+    margin-left: 60px;
+    color: black;
+}
+.section__container{
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    text-align: center;
+}
+img{
+    width: 100%;
+    display: flex;
+}
+.header__container{
+    padding: 1rem 1rem 1rem 1rem;
+}
+.header__image__container{
+    position: relative;
+    min-height: 500px;
+    background-image: url(/assets/images/banner-01.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 2rem;
+    width: 100%;
+    display: flex;
+}
+.header__content{
+    max-width: 600px;
+    padding: 5rem 2rem ;
+}
+.header__content h1{
+    margin-bottom: 1rem;
+    font-size: 3.5rem;
+    line-height: 4rem;
+    font-weight: 600;
+    color: var(--white);
+}
+.header__content p{
+    color: wheat;
+}
+.popularhotels{
+    text-align: center;
+    padding: 1rem 0rem 0rem 1rem;
+}
+.card-cont{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    margin: 1rem;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 1rem;
+}
+
+.card-content h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+.card-content p {
+    color: #555;
+}
+.client__say{
+    text-align: center;
+    padding: 1rem 0rem 0rem 0rem;
+}
+
+.client{
+    background-color: white;
+    max-width: 100%;
+}
+.client__grid{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+}
+.client__card{
+    padding: 2rem;
+    background-color: var(--white);
+    border-radius: 4rem;
+    box-shadow: 5px 5px 20px rgba(16, 16, 16, 0.1);
+}
+.client__card img{
+    max-width: 50px;
+    margin: auto;
+    margin-bottom: 1rem;
+    border-radius: 100%; 
+}
+.client__card p{
+    text-align: center;
+    font-size: small;
+    color: var(--text-dark);
+}
+.reward__container{
+    padding: 2rem;
+    text-align: center;
+    border-radius: 2rem;
+    box-shadow: 5px 5px 30px rgba(0,0,0,0.1);
+}
+.reward__container p{
+    margin-bottom: 2rem;
+    font-weight: 600;
+    color: var(--text-light);
+    font-size: 1.9rem;
+}
+.reward__container h4{
+ max-width: 500px;
+ margin: auto;
+ margin-bottom: 1rem;
+ font-size: 1.8rem;
+ font-weight: 500;
+ color: var(--text-dark);
+}
+.reward__btn{
+    padding: 1rem 3rem;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    columns: var(--white);
+    background-color: var(primary-color);
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.reward__btn :hover{
+    background-color: var(primary-color-dark);
+}
+.footer{
+    background-color: var(--extra-light);
+    width: auto;
+}
+.footer__container{
+    display: grid;
+    grid-template-columns: 2fr repeat(3, 1fr);
+    gap: 5rem;
+}
+.footer__col h3{
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--text-dark);
+}
+.footer__col h4{
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--text-dark);
+}
+.footer__col p{
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    color: var(--text-light);
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.3s;
+}
+.footer__col p:hover{
+    color: var(--text-dark);
+}
+
+
+
+
+@media(width < 900){
+    .header__container{
+        margin-top: 4rem;
+        grid-template-columns: repeat(1, 1fr); 
+    }
+    .popular__gird{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    .client__grid{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+    }
+    .footer__container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media(width > 600){
+    .popular__gird{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+    }  
+    .client__grid{
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+    .footer__container{
+        gap: 10px;
+    }
+}
